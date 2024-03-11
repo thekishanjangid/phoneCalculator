@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    justify-content: center;
+
+}
+
+.iphone {
+    border: 3.5px solid rgb(85, 76, 97);
+    z-index: 1;
+    height: 580px;
+    width: 288px;
+    position: relative;
+    border-radius: 48px;
+    margin: 20px;
+    background-color: black;
+    /* display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 2px black; */
+
+}
+
+.history {
+    width: 98%;
+    top: -30px;
+    position: relative;
+    height: 100px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+   
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+.bar {
+    height: 32px;
+    border-radius: 70px 70px 0 0;
+    position: relative;
+    top: 7px;
+    left: 2px;
+}
+
+.container {
+    position: absolute;
+    left: 15px;
+    top: 25vh;
+    /* left: 5vh; */
+}
+
+.line {
+    position: absolute;
+    background-color: white;
+    height: 3.5px;
+    border-radius: 5px;
+    top: 570px;
+    width: 100px;
+    left: 100px;
+
+}
+
+.row {
+    margin: 2px;
+}
+
+.item {
+    width: 56px;
+    height: 56px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    margin: 2px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.item:active {
+    background-color: darkgreen;
+}
+
+.grey {
+    background-color: rgb(165, 165, 165);
+    color: black;
+}
+
+.yellow {
+    background-color: rgb(255, 159, 10);
+}
+
+#input {
+    position: relative;
+    /* height: 60px; */
+    width: 238px;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}

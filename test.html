@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="arrayDisplay"></h1>
+    <script>
+    // Define an array with some data
+const dataArray = [1, 2, 3, 4, 5];
+
+// Access the HTML element by its id
+const element = document.getElementById("arrayDisplay");
+
+// Use the map function to create an array of HTML list items
+const listItemArray = dataArray.map(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    return li;
+});
+
+// Append the list items to the element
+listItemArray.forEach(item => {
+    element.appendChild(item);
+});
+</script>
+</body>
+</html>
